@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
+
+$font: "Montserrat";
+$yellow: #F0B606;
+
+@import './reset';
+
+body{
+    scroll-behavior: smooth;
+}
+
+.hidden {
+    display: none;
+}
+
+//START
+.main{
+    background-image: url("../resources/INICIO.jpg");
+    background-size: cover;
+    height: 115vh;
+    width: 100%;
+
+    &__button{
+        position: absolute;
+        left: 71vh;
+        top: 94vh;
+        height: 49px;
+        width: 434px;
+        font-size: 23px;
+        background-color: $yellow;
+        font-family: $font;
+        border: 0;
+        box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
+    }
+}
+
+//LEVELS
+.levels{
+    background-image: url("../resources/nivelesfondo.jpg");
+    background-size: cover;
+    height: 266vh;
+    width: 100%;
+
+    &__cont{
+        position: absolute;
+        left: 87vh;
+        top: 49vh;
+        width: 467px;
+
+        .icon{
+            width: 44%;
+        }
+
+        &:hover{
+            width: 477px;
+        }
+    }
+
+    .check{
+        position: absolute;
+        top: 49vh;
+        left: 82vh;
+        width: 73px;
+    }
+
+    .x{
+        position: absolute;
+        top: 49vh;
+        left: 82vh;
+        width: 73px;
+    }
+}
+
+
+
+//READING
+.reading{
+    background-image: url("../resources/lecturaFondo.jpg");
+    background-size: cover;
+    height: 692vh;
+    width: 100%;
+
+    &__button{
+        position: absolute;
+        left: 77vh;
+        top: 665.7vh;
+        height: 64px;
+        width: 658px;
+        font-size: 23px;
+        background-color: $yellow;
+        font-family: $font;
+        border: 0;
+        box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
+    }
+}
+.container{
+    width: 126vh;
+    position: absolute;
+    left: 63vh;
+    top: 68vh;
+    font-family: $font;
+    font-size: 24px;
+
+    &__text{
+        font-weight: 500;
+    }
+}
+
+//TESTS
+
+//CRITICAL
+.criticalTest{
+    background-image: url("../resources/criticafondo.jpg");
+    background-size: cover;
+    height: 115vh;
+    width: 100%;
+
+    .cont{
+        position: absolute;
+        width: 161vh;
+        top: 53vh;
+        left: 32vh;
+
+        .question{
+            font-family: $font;
+            font-size: 24px;
+            font-weight: 400;           
+        }
+
+        .select{
+            position: absolute;
+            top: 16vh;
+            left: 60vh;
+            width: 408px;
+            height: 36px;
+            border: none;
+            font-family: $font;
+        }
+
+        .sele{
+            font-family: $font;
+        }
+
+        .opt1{
+            font-family: $font;
+        }
+
+        .opt2{
+            font-family: $font;
+        }
+
+        .opt3{
+            font-family: $font;
+        }
+
+        &__button{
+            position: absolute;
+            top: 43vh;
+            left: 59vh;
+            height: 42px;
+            width: 422px;
+            font-size: 19px;
+            background-color: $yellow;
+            font-family: $font;
+            border: 0;
+            box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
+        }
+    }
+}
+
+
+//SPELLING
+.spellingTest{
+    background-image: url("../resources/ORTOGRAFÍA.jpg");
+    background-size: cover;
+    height: 115vh;
+    width: 100%;
+
+    .spellingCont{
+        position: absolute;
+        width: 161vh;
+        top: 52vh;
+        left: 32vh;
+
+        .spellingQuestion{
+            font-family: $font;
+            font-size: 24px;
+            font-weight: 400;           
+        }
+
+        .form{
+            position: absolute;
+            top: 12vh;
+            left: 32vh;
+            width: 739px;
+            height: 169px;
+            border: none;
+            font-family: $font;
+            background-color: white;
+        }
+
+        .edit{
+            font-family: $font;
+            position: absolute;
+            top: 24px;
+            left: 26px;
+            font-size: 24px;
+            width: 685px;
+        }
+
+        &__button{
+            position: absolute;
+            top: 44vh;
+            left: 56vh;
+            height: 42px;
+            width: 422px;
+            font-size: 19px;
+            background-color: $yellow;
+            font-family: $font;
+            border: 0;
+            box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
+        }
+    }
+}
+
+
+//RESULT
+.result{
+    background-image: url("../resources/resultadosfondo.jpg");
+    background-size: cover;
+    height: 115vh;
+    width: 100%;
+
+    .criticalTestResults{
+        position: absolute;
+        top: 60vh;
+        left: 54.5vh;
+        width: 113px;
+        height: 219px;
+        font-size: 25px;
+        font-family: $font;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &__1{
+            font-weight: 500;
+            color: #252525;
+        }
+
+        &__2{
+            font-weight: 500;
+            color: #252525;
+        }
+    }
+
+    .total{
+        position: absolute;
+        font-family: "Montserrat";
+        font-size: 76px;
+        font-weight: bolder;
+        color: white;
+        top: 69vh;
+        left: 91vh;
+    }
+
+    .spellingTestResults{
+        position: absolute;
+        top: 60vh;
+        left: 166.5vh;
+        width: 113px;
+        height: 219px;
+        font-size: 25px;
+        font-family: $font;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+
+        &__1{
+            font-weight: 500;
+            color: #252525;
+        }
+
+        &__2{
+            font-weight: 500;
+            color: #252525;
+        }
+    }
+
+    &__button{
+        position: absolute;
+        left: 70.5vh;
+        top: 96.4vh;
+        height: 41px;
+        width: 422px;
+        font-size: 18px;
+        background-color: $yellow;
+        font-family: $font;
+        border: 0;
+        box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);
+    }
+}
+
+/*
+
+*/
