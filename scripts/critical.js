@@ -79,14 +79,17 @@ form.addEventListener('submit', function (event) {
     changeText();
     results();
     answer.selectedIndex = answer.options[0];
-    console.log('r' + right);
-    console.log('w' + wrong);
-    console.log('sc' + criticalScore);
+
+    console.log(criticalScore);
+
+    localStorage.setItem('rCritical', right);
+    localStorage.setItem('wCritical', wrong);
+
 })
 
 btn.addEventListener('click', function () {
     count++
-    if(count==8){
+    if (count == 8) {
         window.location.href = './spellingtest.html';
     }
 })
