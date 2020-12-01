@@ -22,6 +22,11 @@ tCritical.innerText = total1;
 tSpelling.innerText = total2;
 finalScore.innerText = parseFloat(total1)+parseFloat(total2);
 
+let completed = false;
+localStorage.setItem('totalCompleted', parseFloat(total1)+parseFloat(total2));
+
 btnFinal.addEventListener('click', function(){
+    completed = true;
+    localStorage.setItem('showCompleted', completed);
     window.location.href = './levels.html'
 })
