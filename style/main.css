@@ -280,7 +280,7 @@ body {
 .levels__cont {
   position: absolute;
   left: 87vh;
-  top: 49vh;
+  top: 40vh;
   width: 467px;
 }
 
@@ -500,7 +500,7 @@ body {
   font-size: 76px;
   font-weight: bolder;
   color: white;
-  top: 69vh;
+  top: 75vh;
   left: 91vh;
 }
 
@@ -540,7 +540,7 @@ body {
 .result__button {
   position: absolute;
   left: 70.5vh;
-  top: 96.4vh;
+  top: 105.4vh;
   height: 41px;
   width: 422px;
   font-size: 18px;
