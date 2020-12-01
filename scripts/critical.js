@@ -10,9 +10,9 @@ let opt3Current;
 const reading = [
     {
         q: 'En la frase “Cuatro horas más tarde, un paquete, no obteniendo respuesta, desprendió una chalupa que abordó al María Margarita”, ¿Qué significa la palabra “Chalupa”?',
-        opt1: 'Barco de rescate',
+        opt1: 'Una parte específica del barco',
         opt2: 'Ancla del barco',
-        opt3: 'Una parte específica del barco',
+        opt3: 'Barco de rescate',
     },
     {
         q: '¿Cuántos hombres desaparecieron, por primera vez, en el buque abandonado que encontraron?',
@@ -29,8 +29,8 @@ const reading = [
     {
         q: '¿En qué época crees que está adaptado este relato?',
         opt1: 'Principios del siglo XVII',
-        opt2: 'Principios del siglo XXI',
-        opt3: 'Principios del siglo XX',
+        opt2: 'Principios del siglo XX',
+        opt3: 'Principios del siglo XXI',
     },
     {
         q: '¿Cuántos narradores hay en la historia?',
@@ -40,18 +40,18 @@ const reading = [
     },
     {
         q: 'En la frase: “Por ventura las corrientes suelen enredarlos en los mares de sargazo”, ¿Qué significa la palabra sargazo?',
-        opt1: 'Un tipo de alga que flotan en el océano.',
-        opt2: 'Un banco grande de moluscos.',
-        opt3: 'Residuos generados por otros buques.',
+        opt1: 'Un tipo de alga que flotan en el océano',
+        opt2: 'Un banco grande de moluscos',
+        opt3: 'Residuos generados por otros buques',
     },
     {
         q: '¿En el transcurso de cuántos días ocurrieron las desapariciones?',
-        opt1: '2 días',
+        opt1: '1 día',
         opt2: '3 días',
-        opt3: '1 día',
+        opt3: '2 días',
     },
     {
-        q: '¿Cuánto tiempo pasó tras la desaparición de los de los compañeros del que narraba la historia?',
+        q: '¿Cuánto tiempo pasó tras la desaparición de los compañeros del que narraba la historia?',
         opt1: '1 día',
         opt2: '2 horas',
         opt3: '6 horas',
@@ -84,6 +84,7 @@ form.addEventListener('submit', function (event) {
 
     localStorage.setItem('rCritical', right);
     localStorage.setItem('wCritical', wrong);
+    localStorage.setItem('totalCritical', criticalScore);
 
 })
 
@@ -97,28 +98,28 @@ btn.addEventListener('click', function () {
 function results() {
     switch (count) {
         case 1:
-            validation('opt1', 2, 'Incorrecto: La respuesta correcta era "Barco de rescate"');
+            validation('opt3', 20, 'Incorrecto: La respuesta correcta era "Barco de rescate"');
             break;
         case 2:
-            validation('opt1', 3, 'Incorrecto: La respuesta correcta era "Ocho"');
+            validation('opt1', 30, 'Incorrecto: La respuesta correcta era "Ocho"');
             break;
         case 3:
-            validation('opt3', 2, 'Incorrecto: La respuesta correcta era "Resignación"');
+            validation('opt3', 20, 'Incorrecto: La respuesta correcta era "Resignación"');
             break;
         case 4:
-            validation('opt3', 3, 'Incorrecto: La respuesta correcta era "Principios del siglo XX"');
+            validation('opt2', 50, 'Incorrecto: La respuesta correcta era "Principios del siglo XX"');
             break;
         case 5:
-            validation('opt2', 2, 'Incorrecto: La respuesta correcta era "Dos"');
+            validation('opt2', 30, 'Incorrecto: La respuesta correcta era "Dos"');
             break;
         case 6:
-            validation('opt1', 3, 'Incorrecto: La respuesta correcta era "Un tipo de alga que flotan en el océano"');
+            validation('opt1', 50, 'Incorrecto: La respuesta correcta era "Un tipo de alga que flotan en el océano"');
             break;
         case 7:
-            validation('opt1', 2, 'Incorrecto: La respuesta correcta era "2 días"');
+            validation('opt3', 30, 'Incorrecto: La respuesta correcta era "2 días"');
             break;
         case 8:
-            validation('opt2', 2, 'Incorrecto: La respuesta correcta era "2 horas"');
+            validation('opt2', 20, 'Incorrecto: La respuesta correcta era "2 horas"');
             break;
     }
 
