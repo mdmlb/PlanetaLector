@@ -1,7 +1,9 @@
 const rightCritical = document.querySelector('.criticalTestResults__1');
 const wrongCritical = document.querySelector('.criticalTestResults__2');
+const tCritical = document.querySelector('.criticalTestResults__3');
 const rightSpelling = document.querySelector('.spellingTestResults__1');
 const wrongSpelling = document.querySelector('.spellingTestResults__2');
+const tSpelling = document.querySelector('.spellingTestResults__3');
 const finalScore = document.querySelector('.total');
 const btnFinal = document.querySelector('.result__button');
 
@@ -16,6 +18,8 @@ rightCritical.innerText = goodCritical;
 wrongCritical.innerText = badCritical;
 rightSpelling.innerText = goodSpelling;
 wrongSpelling.innerText = badSpelling;
+tCritical.innerText = total1;
+tSpelling.innerText = total2;
 finalScore.innerText = parseFloat(total1)+parseFloat(total2);
 
 btnFinal.addEventListener('click', function(){
