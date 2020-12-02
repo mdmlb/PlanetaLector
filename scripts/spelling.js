@@ -48,7 +48,7 @@ const reading = [
     },
     {
         q: '¿Esta frase está escrita correctamente? Corrígela si no es así',
-        text: 'El viejo marinero que me había hecho la pregunta, me miró desconfiado, con las manos en los bolsillos; miró largo rato mi pantalón; distraído. Al fin se tiró al agua.',
+        text: 'El viejo marinero que me habia hecho la pregunta me miró desconfiado; miró largo rato mi pantalón; distraído. Al fin se tiro al agua.',
     },
 ];
 
@@ -155,7 +155,7 @@ function results() {
             validation(
                 'El viejo marinero que me había hecho la pregunta me miró desconfiado, con las manos en los bolsillos. Miró largo rato mi pantalón, distraído. Al fin se tiró al agua.',
                 50,
-                'Incorrecto: Incorrecto: La frase correcta era: "El viejo marinero que me había hecho la pregunta me miró desconfiado, con las manos en los bolsillos. Miró largo rato mi pantalón, distraído. Al fin se tiró al agua."');
+                'Incorrecto: La frase correcta era: "El viejo marinero, que me había hecho la pregunta, me miró desconfiado. Miró largo rato mi pantalón, distraído. Al fin se tiró al agua."');
             break;
     }
 
