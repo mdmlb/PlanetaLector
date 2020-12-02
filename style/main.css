@@ -551,6 +551,24 @@ body {
           box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
 }
 
+.imageInstruc {
+  width: 100%;
+}
+
+.btnInstruc {
+  position: absolute;
+  top: 90vh;
+  left: 70vh;
+  height: 42px;
+  width: 422px;
+  font-size: 19px;
+  background-color: #F0B606;
+  font-family: "Montserrat";
+  border: 0;
+  -webkit-box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.5);
+}
+
 /*
 
 */

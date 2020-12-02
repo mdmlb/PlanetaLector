@@ -303,6 +303,23 @@ body{
     }
 }
 
+
+.imageInstruc{
+    width: 100%;
+}
+
+.btnInstruc{
+    position: absolute;
+    top: 90vh;
+    left: 70vh;
+    height: 42px;
+    width: 422px;
+    font-size: 19px;
+    background-color: $yellow;
+    font-family: $font;
+    border: 0;
+    box-shadow: 0px 6px 4px rgba(0, 0, 0, 0.50);   
+}
 /*
 
 */
