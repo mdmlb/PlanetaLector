@@ -153,7 +153,7 @@ function results() {
             break;
         case 11:
             validation(
-                'El viejo marinero que me había hecho la pregunta me miró desconfiado, con las manos en los bolsillos. Miró largo rato mi pantalón, distraído. Al fin se tiró al agua.',
+                'El viejo marinero, que me había hecho la pregunta, me miró desconfiado. Miró largo rato mi pantalón, distraído. Al fin se tiró al agua.',
                 50,
                 'Incorrecto: La frase correcta era: "El viejo marinero, que me había hecho la pregunta, me miró desconfiado. Miró largo rato mi pantalón, distraído. Al fin se tiró al agua."');
             break;
